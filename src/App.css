@@ -1,5 +1,6 @@
 .calculator {
   display: grid;
+  grid-auto-columns: 1fr;
   grid-template-areas:
     'input input input input'
     'firstBtn secondBtn thirdBtn divide'
