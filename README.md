@@ -1,7 +1,11 @@
-### Math Magicials
-# Getting Started with Create React App
+  ![](https://img.shields.io/badge/Calculator-blue)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  ### Math Magicials
+
+> Calculator is a single page application built to calculate simple mathematical operations. It is built using React.
+
+##Screenshoot:
+![screenshot](./src/assets/Screenshot.png)
 
 ## Available Scripts
 
@@ -46,26 +50,31 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Live Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Website Link](https://nevisende.github.io/math-magicians/)
 
-### Analyzing the Bundle Size
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+👤 **Furkan Denizhan**
 
-### Making a Progressive Web App
+- GitHub: [github](https://github.com/nevisende)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/furkan-denizhan/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br>
 
-### Advanced Configuration
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions, issues, and feature requests are welcome!
 
-### Deployment
+Feel free to check the [issues page](https://github.com/AnselemOdims/Calculator/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br>
 
-### `npm run build` fails to minify
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
