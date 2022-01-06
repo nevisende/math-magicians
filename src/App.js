@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import React, { useState } from 'react';
 import './App.css';
 import Calculator from './components/Calculator';
@@ -19,7 +18,7 @@ function App() {
   };
 
   const onLog = (calculateLog) => {
-    setLog((prevLog) => [...prevLog, calculateLog]);
+    if (Object.keys(calculateLog).length === 3) setLog((prevLog) => [...prevLog, calculateLog]);
   };
 
   return (

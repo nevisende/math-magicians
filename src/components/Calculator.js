@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Buttons } from '../assets/button-list';
@@ -19,13 +18,15 @@ export default function Calculator({ handleNotification, handleLog }) {
                     ${calculateLoop.operation ? calculateLoop.operation : ''}
                     ${calculateLoop.next ? calculateLoop.next : ''}
                     `;
-    /* an assignment with the template literal, it counts even spaces so that i need to trim and you know
-         useEffect works when component mounted.And If you dont want to see empty input you need to check it and assign zero. */
+    /* An assignment with the template literal, it counts even spaces so that i need to trim
+     and you know how useEffect works when component mounted.And If you dont want to see empty
+     input you need to check it and assign zero. */
+
     setNumber(result.trim().length === 0 ? 0 : result.trim());
   }, [calculateLoop]);
 
   const handlerCalculate = (value) => {
-    // If a user firstly type the symbols that are below we need to check and push notification to aware.
+    // If a user firstly type the symbols that are below we need to check and push notification
     if (/^[x|+|-|÷|AC|%|+/-]/.test(value) && !(calculateLoop.next || calculateLoop.total)) {
       pushNotification('You need a number to calculate, man :-)');
       return;
@@ -43,7 +44,14 @@ export default function Calculator({ handleNotification, handleLog }) {
     <div className="calculator">
       <input value={number} id="input" onKeyDown={() => pushNotification('Please use just calculator buttons!')} />
       {
-        Buttons.map((button) => <Button id={button.id} value={button.value} handlerCalculate={handlerCalculate} key={button.id} />)
+        Buttons.map((button) => (
+          <Button
+            id={button.id}
+            value={button.value}
+            handlerCalculate={handlerCalculate}
+            key={button.id}
+          />
+        ))
       }
     </div>
   );

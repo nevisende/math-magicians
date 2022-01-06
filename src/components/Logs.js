@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -41,7 +40,7 @@ export default class Logs extends React.Component {
           ${log.operation ? log.operation : ''}
           ${log.next ? log.next : ''}
           `;
-            if (result.trim().length === 0) return;
+            if (result.trim().length === 0) return null;
             return <li key={`${log.next}-log`}>{result}</li>;
           })}
         </ul>
