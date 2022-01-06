@@ -1,13 +1,30 @@
+body {
+  min-height: 100vh;
+  background-color: #fdfdfd;
+}
+
+#root {
+  min-width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
 .calculator {
+  position: absolute;
+  inset: 0;
+  margin: auto;
   display: grid;
+  max-width: 30rem;
+  max-height: 30rem;
   grid-auto-columns: 1fr;
   grid-template-areas:
     'input input input input'
-    'firstBtn secondBtn thirdBtn divide'
+    'all-clear C percentage divide'
     'seven eight nine multiply'
-    'four five six subtraction'
-    'one two three summation'
-    'zero zero dot equal';
+    'four five six subtract'
+    'one two three add'
+    'zero zero decimal-point equals';
 }
 
 #input {
@@ -15,19 +32,21 @@
   background-color: rgb(95, 104, 111);
   color: white;
   text-align: right;
-  padding-right: 1em;
+  padding: 1em;
+  outline: none;
+  border: none;
 }
 
-#firstBtn {
-  grid-area: firstBtn;
+#all-clear {
+  grid-area: all-clear;
 }
 
-#secondBtn {
-  grid-area: secondBtn;
+#C {
+  grid-area: C;
 }
 
-#thirdBtn {
-  grid-area: thirdBtn;
+#percentage {
+  grid-area: percentage;
 }
 
 #divide {
@@ -40,23 +59,23 @@
   background-color: darkorange;
 }
 
-#subtraction {
-  grid-area: subtraction;
+#subtract {
+  grid-area: subtract;
   background-color: darkorange;
 }
 
-#summation {
-  grid-area: summation;
+#add {
+  grid-area: add;
   background-color: darkorange;
 }
 
-#equal {
-  grid-area: equal;
+#equals {
+  grid-area: equals;
   background-color: darkorange;
 }
 
-#dot {
-  grid-area: dot;
+#decimal-point {
+  grid-area: decimal-point;
 }
 
 #zero {
@@ -99,7 +118,23 @@
   grid-area: nine;
 }
 
-.calculator > * {
+.calculator > *:not(#input) {
   border: 1px solid gainsboro;
   padding: 1em 0;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: darkred;
+  color: #fdfdfd;
+  padding: 1rem;
+}
+
+.show-popup {
+  display: block;
 }
