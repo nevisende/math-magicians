@@ -4,7 +4,7 @@
 
 > Calculator is a single page application built to calculate simple mathematical operations. It is built using React.
 
-##Screenshoot:
+## Screenshoot:
 ![screenshot](./src/assets/Screenshot.png)
 
 ## Available Scripts
