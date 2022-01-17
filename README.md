@@ -53,6 +53,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Live Demo
 
 [Website Link](https://nevisende.github.io/math-magicians/)
+[Netlify](https://magicianofmath.netlify.app/)
+[Heroku](https://magicianofmath.herokuapp.com/)
 
 ## Authors
 
