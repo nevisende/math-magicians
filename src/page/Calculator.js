@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import './App.css';
-import Calculator from './components/Calculator';
-import Logs from './components/Logs';
-import Popup from './components/Popup';
+import Calculator from '../components/Calculator';
+import Logs from '../components/Logs';
+import Popup from '../components/Popup';
 
-function App() {
+export default function Home() {
   const [message, setMessage] = useState('');
   const [displayPopupClass, setDisplayPopupClass] = useState('popup');
   const [log, setLog] = useState([]);
@@ -14,7 +13,7 @@ function App() {
     setDisplayPopupClass('popup show-popup');
     setTimeout(() => {
       setDisplayPopupClass('popup');
-    }, 1250);
+    }, 2500);
   };
 
   const onLog = (calculateLog) => {
@@ -22,12 +21,16 @@ function App() {
   };
 
   return (
-    <>
-      <Popup text={message} displayPopupClass={displayPopupClass}> </Popup>
-      <Calculator handleNotification={showPopup} handleLog={onLog} />
-      <Logs logList={log}> </Logs>
-    </>
+    <div className="calc-page">
+      <div>
+        <h1>Lets do some math!</h1>
+        <Logs logList={log}> </Logs>
+      </div>
+
+      <div className="calc-container">
+        <Popup text={message} displayPopupClass={displayPopupClass}> </Popup>
+        <Calculator handleNotification={showPopup} handleLog={onLog} />
+      </div>
+    </div>
   );
 }
-
-export default App;

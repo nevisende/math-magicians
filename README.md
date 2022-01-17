@@ -4,7 +4,7 @@
 
 > Calculator is a single page application built to calculate simple mathematical operations. It is built using React.
 
-##Screenshoot:
+## Screenshoot:
 ![screenshot](./src/assets/Screenshot.png)
 
 ## Available Scripts
@@ -53,6 +53,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Live Demo
 
 [Website Link](https://nevisende.github.io/math-magicians/)
+[Netlify](https://magicianofmath.netlify.app/)
+[Heroku](https://magicianofmath.herokuapp.com/)
 
 ## Authors
 
